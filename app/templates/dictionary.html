@@ -1,0 +1,9 @@
+<div>
+    {% for row in range(events) %}
+        <div>
+            {% for column in range(1) %}
+            <div> {{ dictionary_array[row][column] }} </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
