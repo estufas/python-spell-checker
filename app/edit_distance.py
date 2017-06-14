@@ -12,7 +12,9 @@ class EditDistance:
                 result = EditDistance.levenshtein(unchecked_word, value)
                 if (result < 2):
                     possible_words.append(value)
-        return possible_words
+            return possible_words
+        else:
+            return result
 
     def levenshtein(source, target):
         if len(source) < len(target):
